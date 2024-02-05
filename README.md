@@ -24,8 +24,12 @@ TODO (250 words minimum): Discuss the overview of the project using and building
 
 
 
-When developing new software, software engineers need to make test cases to test their functions. The big problem with creating test cases is ensuring that they work. In order to ensure that their test cases work, software engineers have developed a technique called mutation testing. Mutation testing is a technique where you purposefully put defects into your program and then run the program's test suite to see if your test cases can catch the faulty input. Mutation testing tools will return a score after running. If you have a low score then that means your program did not do a good job at catching the defects you gave, on the other hand if you have a high score then that means your program did do a good job at catching the defects. The problem with this is that running your test suite can be computationally expensive. The goal of this project is to create a tool that can be used to predict the mutation score of a test case so software engineers don't have to waste resources running the program. In order to do this I need to find reputable Python programs. That means I will need to find Python programs from a trustworthy source like github, I also need to ensure that these python programs are using Python 3.11 or higher so it can work with my project, the program will also need to a poetry dependency management system,it needs the py test automation framework so it can test the test cases, lastly I need to ensure that I can use the testing tools like chasten or symbex on the program.
-# Maybe change the last few lines.
+When developing new software, software engineers need to make test cases to test their functions. The big problem with creating test cases is ensuring that they work. In order to ensure that their test cases work, software engineers have developed a technique called mutation testing. Mutation testing is a technique where you purposefully put defects into your program and then run the program's test suite to see if your test cases can catch the faulty input. Mutation testing tools will return a score after running. If you have a low score then that means your program did not do a good job at catching the defects you gave, on the other hand if you have a high score then that means your program did do a good job at catching the defects. The problem with this is that running your test suite can be computationally expensive. The goal of this project is to create a tool that can be used to predict the mutation score of a test case so software engineers don't have to waste resources running the program. In order to do this I need to find reputable Python programs. That means I will need to find Python programs from a trustworthy source like github and make sure they have pyproject tomolfiles and a test file so I can run the tool on it.
+# Maybe change the last few lines. Also need to find 3-5 programs you can run chasten on. Fork them into chasten repo
+-lookf for corealation between count of pattern and the score. example for for if (hard to  test), as the amount of these are found the lower the score will be
+-
+-Find 1 or 2 anti patterns, write code using chasten or symber to find them xpaths
+
 
 ## Literature Review
 https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=28abbfdcd695f6ffc18c5041f8208dcfc8810aaf
@@ -35,6 +39,10 @@ TODO: Conduct literature review by describing relevant work related to the proje
 
 ## Methods
 
+
+- First project: https://github.com/pytest-dev/pytest-env
+- Second project: https://github.com/pytest-dev/pytest
+- Thrid project: https://github.com/kieran-ryan/pyprojectsort
 TODO: Discuss the methods of the project to be able to answer the `how` question (`how was this project completed?`). The methods section in an academic research outlines the specific procedures, techniques, and methodologies employed to conduct the study, offering a transparent and replicable framework for the research. It details the resources behind the work, in terms of, for example, the design of the algorithm and the experiment(s), data collection methods, applied software libraries, required tools, the types of statistical analyses and models which are applied to ensure the rigor and validity of the study. This section provides clarity for other researchers to understand and potentially replicate the study, contributing to the overall reliability and credibility of the research findings.
 
 In order to do this I need to find reputable Python programs. That means I will need to find Python programs from a trust worthy source like github, I also need to ensure that these python programs are using Python 3.11 or higher so it can work with my project, the program will also need to a poetry dependency management system,it needs the pytest automation framewrok so it can test the test cases, lastly I need to ensure that I can use the testing tools like chasten or symbex on the program.
