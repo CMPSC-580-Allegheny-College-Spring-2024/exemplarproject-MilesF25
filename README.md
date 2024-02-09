@@ -13,7 +13,7 @@ This repository contains student project materials, including project report, da
 
 ## Project Name: Enter The Name Of Your Project
 
-Here, think of an interesting name of the work that bring a freshness and excitement to the area of this project. Consider using a name that carries some information about what the project and provides some hint at what the project does without being too wordy.
+* Here, think of an interesting name of the work that bring a freshness and excitement to the area of this project. Consider using a name that carries some information about what the project and provides some hint at what the project does without being too wordy.
 
 ---
 
