@@ -34,10 +34,28 @@ When developing new software, software engineers need to make test cases to test
 
 
 ## Literature Review
-https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=28abbfdcd695f6ffc18c5041f8208dcfc8810aaf
+
 Look for articles about mutation and mutation testing
+https://dl.acm.org/doi/pdf/10.1145/2931037.2931038
+
+https://www.jot.fm/issues/issue_2006_07/column4.pdf
+
+
 
 TODO: Conduct literature review by describing relevant work related to the project and hence providing an overview of the state of the art in the area of the project. This section serves to contextualize the study within the existing body of literature, presenting a thorough review of relevant prior research and scholarly contributions. In clear and meaningful language, this section aims to demonstrate the problems, gaps, controversies, or unanswered questions that are associated with the current understanding of the topic. In addition, this section serves to highlight the current study's unique contribution to the field. By summarizing and critiquing existing works, this section provides a foundation for readers to appreciate the novelty and significance of the study in relation to the broader academic discourse. The "Literature Review" section further contributes to the `why is the project important?` question. The number of scholarly work included in the literature review may vary depending on the project.
+
+-Explain what mutation testing is, explain what anti patterns are
+
+As a software engineer when you create programs that desgined to do certain task it is important that your program is correct. A lot of software engineers will make a program that will make a program that will work but it will not
+produce the correct output. For example if you make a program that can add two nunbers together, you enter 5 + 5, the expected output would be 10 but somehow you ended up with 20. Your program did work, it added the two numbers together
+but it did not produce the correct answer. In oreder to help programmers make sure that their code is correct they create test cases. Test cases are used to make sure that your program does what it's supposed to do, the better the test
+cases, the more confidence you can have with your output being correct. But how do you know your test cases are strong, the only way to know is to test them. This is where mutation testing will come in, look for info in article, then move onto antipatterns, then talk about what the tool
+
+What is mutation testing and what are anti-patterns.
+
+-Explain talk about the research I found (what they say)
+-Conclusion
+
 
 ## Methods
 
