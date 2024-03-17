@@ -11,9 +11,7 @@ This repository contains student project materials, including project report, da
 
 ## Major: SE
 
-## Project Name: Enter The Name Of Your Project
-
-* Here, think of an interesting name of the work that bring a freshness and excitement to the area of this project. Consider using a name that carries some information about what the project and provides some hint at what the project does without being too wordy.
+## Project Name: COMMA
 
 
 ## Link to current progress
@@ -22,16 +20,8 @@ https://github.com/AstuteSource/SEERS/tree/main
 
 ## Overview
 
-TODO (250 words minimum): Discuss the overview of the project using and building on the project description provided by the department. In this section, a concise summary is discussed of the study's key elements, offering the reader a quick understanding of the research's scope and goals. The section continues to outline the main topics, research questions, hypotheses, and /or theories in a clear and meaningful language to provide a type of roadmap for the reader to navigate the forthcoming details of the project. This section also needs to motivate the project by providing context for the study, outlining the current state of knowledge in the field, and highlighting any gaps or limitations in existing research. The section serves as a foundational guide that enables the reader to grasp the context of the study, in addition to its structure, before moving into a more technically-based discussion in the following sections of the article. In short, the "Overview" section needs to answer the `what` and `why` questions, that is `what is the project?` and `why is the project important?`
-
-
 
 When developing new software, software engineers need to make test cases to test their functions. The big problem with creating test cases is ensuring that they work. In order to ensure that their test cases work, software engineers have developed a technique called mutation testing. Mutation testing is a technique where you purposely put defects into your program and then run the program's test suite to see if your test cases can catch the faulty input. Mutation testing tools will return a score after running. If you have a low score, then that means your program did not do a good job at catching the defects you gave; on the other hand, if you have a high score, then that means your program did do a good job at catching the defects. The problem with this is that running your test suite can be computationally expensive. The goal of this project is to use a tool like chasten or Symbex to help predict the mutation score of a test case so software engineers don't have to waste resources running the program. In order to do this, I need to find reputable Python programs. That means I will need to find Python programs from a trustworthy source like GitHub; I also need to ensure that these Python programs are using Python 3.11 or higher so it can work with my project. The program will also need a Poetry dependency management system; it needs the Pytest automation framework so it can test the test cases. Lastly, I need to ensure that I can use the testing tools like Chasten or Symbex on the program.
-
--lookf for corealation between count of pattern and the score. example for for if (hard to  test), as the amount of these are found the lower the score will be
--
--Find 1 or 2 anti patterns, write code using chasten or symber to find them xpaths
-
 
 ## Literature Review
 
@@ -43,11 +33,6 @@ https://www.jot.fm/issues/issue_2006_07/column4.pdf
 https://spe-ed.com/papers/moreanti.pdf
 
 
-
-TODO: Conduct literature review by describing relevant work related to the project and hence providing an overview of the state of the art in the area of the project. This section serves to contextualize the study within the existing body of literature, presenting a thorough review of relevant prior research and scholarly contributions. In clear and meaningful language, this section aims to demonstrate the problems, gaps, controversies, or unanswered questions that are associated with the current understanding of the topic. In addition, this section serves to highlight the current study's unique contribution to the field. By summarizing and critiquing existing works, this section provides a foundation for readers to appreciate the novelty and significance of the study in relation to the broader academic discourse. The "Literature Review" section further contributes to the `why is the project important?` question. The number of scholarly work included in the literature review may vary depending on the project.
-
--Explain what mutation testing is, explain what anti patterns are
-
 In software engineering, ensuring the correctness of programs is important. While software engineers may create programs that seemingly work, making sure that they produce the correct output is a challenge. For example, a program designed to add two numbers together may have unexpected results, like adding 5 and 5 and getting 20 instead of the 10. To avoid this, programmers use test cases to verify that programs function as intended. The stronger the test suite the more confidence you can have in the program's correctness.
 
 One approach to strengthening your test suite is mutation testing. This technique, described  in the paper "Predictive Mutation Testing" by Zhang et al. (2016), evaluates test suite quality by generating program variants, or mutants, through syntactic changes. First-order mutation testing involves introducing one change at a time, such as deleting a statement, to create mutants. A mutant is deemed "killed" if any test produces different results compared to the original program.But if no differences are found then the mutant "survives." If the mutant is “killed” that means that the test suite is strong and the suite will have a high mutation score, on the other hand if the mutant “survives” that means there are some potential weaknesses in the test suite and that will result in a low mutation score.
@@ -56,15 +41,15 @@ However, mutation testing is not the only way to strengthen test cases. It's imp
 
 Mutation testing shows its effectiveness in finding deficiencies in test suites, however it’s very computationally expensive. Similarly, having to be constantly aware of anti-patterns can be draining for developers. COMMA. The tool that we are developing can help alleviate these problems. COMMA will be able to look at a test suite and give a predicted mutation score of the test suite without needing the user to run the test suite.
 
+Sources and Links:
+https://spe-ed.com/papers/moreanti.pdf
+- Nafees, T., Coull, N., Ferguson, I., & Sampson, A. (2018, November). Vulnerability anti-patterns: a timeless way to capture poor software practices (vulnerabilities). In 24th Conference on Pattern Languages of Programs (p. 23). The Hillside Group.
 
-talk about making test stronmger 
-look for info in article, then move onto antipatterns, then talk about what the tool
+-https://www.jot.fm/issues/issue_2006_07/column4.pdf
+- Dodani, M. H. (2006). Patterns of Anti-Patterns. J. Object Technol., 5(6), 29-33.
 
-What is mutation testing and what are anti-patterns.
-
--Explain talk about the research I found (what they say)
--Conclusion
-
+- https://dl.acm.org/doi/abs/10.1145/2931037.2931038
+- Papadakis, M., Kintis, M., Zhang, J., Jia, Y., Le Traon, Y., & Harman, M. (2019). Mutation testing advances: an analysis and survey. In Advances in computers (Vol. 112, pp. 275-378). Elsevier.
 
 ## Methods
 
@@ -72,17 +57,21 @@ What is mutation testing and what are anti-patterns.
 - First project: https://github.com/pytest-dev/pytest-env
 - Second project: https://github.com/pytest-dev/pytest
 - Thrid project: https://github.com/kieran-ryan/pyprojectsort
-  
-TODO: Discuss the methods of the project to be able to answer the `how` question (`how was this project completed?`). The methods section in an academic research outlines the specific procedures, techniques, and methodologies employed to conduct the study, offering a transparent and replicable framework for the research. It details the resources behind the work, in terms of, for example, the design of the algorithm and the experiment(s), data collection methods, applied software libraries, required tools, the types of statistical analyses and models which are applied to ensure the rigor and validity of the study. This section provides clarity for other researchers to understand and potentially replicate the study, contributing to the overall reliability and credibility of the research findings.
 
-Draft
+In order to do this we had to find reputable Python programs. We were able find them from a trust worthy source like github. The python programs needed to meet a four requirements if it were to be used. The requirements include using Python 3.11 or higher, a Poetry dependency management system, a Pytest automation framework, and support for testing tools like Chasten, Symbex, or Mutmut. Once the are conditions met. We were able to move on to the next step which was creating a script that can run chasten and mutmut on the program. With chasten we were able to extract the possible anti-patterns from the python program, with mutmut we are able to test the test cases to see if it truly is an anti pattern. We then stored the results from both programs into a json file which we then passed to a Large Language Model (LLM) for training. The LLM uses this data to predict the mutation score of program code prior to execution.
 
-In order to do this I need to find reputable Python programs. That means I will need to find Python programs from a trust worthy source like github, I also need to ensure that these python programs are using Python 3.11 or higher so it can work with my project, the program will also need to a poetry dependency management system,it needs the pytest automation framewrok so it can test the test cases, lastly I need to ensure that I can use the testing tools like chasten or symbex on the program. Then I plan to use mutmut or mutatest to get a mutation score, I will use the data I get from mutmtut or mutatest and find away to feed the data into a NLP so I can train it to help predict the mutation score
-of code before it runs.
 
 ## Using the Artifact
 
-TODO: The result of your work will be the delivery of some type of artifact which will likely contain software programming solutions (i.e., Python code, HTML pages, or similar). To allow the user to experience and execute your artifact, you must first explain how to set up the initial conditions to run or use the artifact. Be sure to offer explicit details and instructions regarding the installation of the necessary foundational libraries, drivers, external software projects, containers and similar types of tertiary software which are involved in executing your artifact. Once these initial software installations have been completed, then you are asked to offer the necessary instructions for actually executing the artifact. For this, please provide all command line parameters or associated bash commands for execution. Please remember that users are unwilling to "figure-out" how to use code in absence of the essential instructions concerning the execution of project artifacts.
+
+As of now in order to run this project 
+I reccommend making a virtual environment
+
+1: You need to git clone this repository.
+2: Next you can make a folder inside of analyzer and clone the repo of the program you want to run COMMA on inside of it. Here is an example program you can use. 
+Go to https://github.com/AstuteSource/lazytracker/tree/5d87eedbb47e6287dd9be603e8d9423a48db0364 and clone the lazytracker repo inside of the lazytracker folder. The path should look like SEERS\scripts\analyzer\demo\lazytracker
+3: Run the command "Poetry install"
+4: cd into scripts and run " poetry run analyzer --search-path demo --chasten-config-path Config"
 
 ## Results and Outcomes
 
