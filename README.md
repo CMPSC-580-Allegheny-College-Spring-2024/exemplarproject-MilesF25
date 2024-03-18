@@ -68,9 +68,12 @@ As of now in order to run this project
 I reccommend making a virtual environment
 
 1: You need to git clone this repository.
+
 2: Next you can make a folder inside of analyzer and clone the repo of the program you want to run COMMA on inside of it. Here is an example program you can use. 
 Go to https://github.com/AstuteSource/lazytracker/tree/5d87eedbb47e6287dd9be603e8d9423a48db0364 and clone the lazytracker repo inside of the lazytracker folder. The path should look like SEERS\scripts\analyzer\demo\lazytracker
+
 3: Run the command "Poetry install"
+
 4: cd into scripts and run " poetry run analyzer --search-path demo --chasten-config-path Config"
 
 ## Results and Outcomes
