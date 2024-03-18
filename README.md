@@ -25,14 +25,6 @@ When developing new software, software engineers need to make test cases to test
 
 ## Literature Review
 
-Look for articles about mutation and mutation testing
-https://dl.acm.org/doi/pdf/10.1145/2931037.2931038
-
-https://www.jot.fm/issues/issue_2006_07/column4.pdf
-
-https://spe-ed.com/papers/moreanti.pdf
-
-
 In software engineering, ensuring the correctness of programs is important. While software engineers may create programs that seemingly work, making sure that they produce the correct output is a challenge. For example, a program designed to add two numbers together may have unexpected results, like adding 5 and 5 and getting 20 instead of the 10. To avoid this, programmers use test cases to verify that programs function as intended. The stronger the test suite the more confidence you can have in the program's correctness.
 
 One approach to strengthening your test suite is mutation testing. This technique, described  in the paper "Predictive Mutation Testing" by Zhang et al. (2016), evaluates test suite quality by generating program variants, or mutants, through syntactic changes. First-order mutation testing involves introducing one change at a time, such as deleting a statement, to create mutants. A mutant is deemed "killed" if any test produces different results compared to the original program.But if no differences are found then the mutant "survives." If the mutant is “killed” that means that the test suite is strong and the suite will have a high mutation score, on the other hand if the mutant “survives” that means there are some potential weaknesses in the test suite and that will result in a low mutation score.
