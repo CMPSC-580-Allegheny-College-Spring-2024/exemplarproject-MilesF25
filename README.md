@@ -139,10 +139,8 @@ The complete data exists in `new_output_with_functions.json`
 
 ## Results and Outcomes
 
- Discuss the outcomes of your project in this section. Depending on the project type, the presented results and outcomes will vary. In some projects, you will be asked to present a theoretical analysis, and in others your experimental study and its results. In this section, you are also to demonstrate an enhanced version of your artifact by showing its capabilities and applications, in light of the evaluation metrics for assessing the artifact
-
----
-T
+The JSON file generated from our mutation testing process provides valuable insights into the effectiveness of our testing approach. The mutation score, which is 0.33, shows that about one-third of the introduced mutations were detected by our test suite. This score serves as a gauge for measuring the robustness of our testing process.
+The results show that there are some weaknesses in codes test cases. Some mutations remained undetected by the test suite. This highlights areas where test coverage may be lacking and suggests the need for additional test cases to address these gaps.
 
 ## Exemplar Projects Discussions
 
